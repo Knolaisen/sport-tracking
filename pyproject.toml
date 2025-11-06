@@ -5,7 +5,9 @@ description = "Multi-object tracking for sports analytics using deep learning."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "codecarbon>=3.0.8",
     "torch>=2.9.0",
+    "ultralytics>=8.3.225",
 ]
 
 [dependency-groups]
