@@ -6,7 +6,11 @@ import wandb
 load_dotenv()
 
 wandb.login(key=os.getenv("WANDB_API_KEY"))
-wandb.init(project="sport-tracking")
+wandb.init(
+    project="sport-tracking",
+    mode="online",
+    name="yolo11l-rbk-all",
+)
 
 
 model = YOLO("yolo11l.pt")

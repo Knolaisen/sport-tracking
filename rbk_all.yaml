@@ -12,6 +12,6 @@ val:
   - RBK-VIKING/data/images/train
 
 names:
-  0: ball
-  1: player
-  2: referee
+  0: player
+  1: ball
+  2: event_labels
