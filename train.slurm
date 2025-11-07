@@ -3,7 +3,7 @@
 #SBATCH --job-name="sport-tracking"
 #SBATCH --time=10:00:00
 #SBATCH --partition=GPUQ
-#SBATCH --mem=32GB
+#SBATCH --mem=80GB
 #SBATCH --constraint="(a100|h100|h200)&(gpu40g|gpu80g)"
 #SBATCH --output=slurm_outputs/output_sport-tracking.txt
 #SBATCH --error=slurm_outputs/output_sport-tracking.err
@@ -27,7 +27,7 @@ pip install uv --user
 uv sync
 
 # Enable W&B logging for Ultralytics
-yolo settings wandb=True
+uv run yolo settings wandb=True
 
 
 # Run the Python script
