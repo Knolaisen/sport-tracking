@@ -5,6 +5,7 @@ description = "Multi-object tracking for sports analytics using deep learning."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "albumentations>=2.0.8",
     "codecarbon>=3.0.8",
     "ipykernel>=7.1.0",
     "lap>=0.5.12",
