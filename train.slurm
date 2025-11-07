@@ -31,6 +31,6 @@ yolo settings wandb=True
 
 
 # Run the Python script
-uv run python main.py
+uv run python train-obb.py
 
 echo "Job finished"
