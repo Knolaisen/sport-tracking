@@ -220,3 +220,8 @@ data/*
 
 **runs/
 *.pt
+
+
+slurm_outputs/*
+wandb/*
+*/wandb/*
