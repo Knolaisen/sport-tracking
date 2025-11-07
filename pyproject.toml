@@ -8,8 +8,10 @@ dependencies = [
     "codecarbon>=3.0.8",
     "ipykernel>=7.1.0",
     "lap>=0.5.12",
+    "python-dotenv>=1.2.1",
     "torch>=2.9.0",
     "ultralytics>=8.3.225",
+    "wandb>=0.22.3",
 ]
 
 [dependency-groups]
