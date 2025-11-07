@@ -1,0 +1,17 @@
+path: /home/svernys/Documents/school/computer-inteligence/sport-tracking/data/Football2025
+
+train:
+  - RBK-AALESUND/data/images/train
+  - RBK-BODO/part1/RBK_BODO_PART1/data/images/train
+  - RBK-BODO/part2/RBK_BODO_PART2/data/images/train
+  - RBK-BODO/part3/RBK_BODO_PART3/data/images/train
+  - RBK-FREDRIKSTAD/data/images/train
+  - RBK-HamKam/data/images/train
+  - RBK-VIKING/data/images/train
+val:
+  - RBK-VIKING/data/images/train
+
+names:
+  0: ball
+  1: player
+  2: referee
