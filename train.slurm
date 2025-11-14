@@ -1,9 +1,11 @@
 #!/bin/sh
 #SBATCH --account=share-ie-idi
 #SBATCH --job-name="sport-tracking"
-#SBATCH --time=10:00:00
+#SBATCH --time=03-00:00:00
 #SBATCH --partition=GPUQ
+#SBATCH --gres=gpu:1
 #SBATCH --mem=80GB
+#SBATCH --nodes=1
 #SBATCH --constraint="(a100|h100|h200)&(gpu40g|gpu80g)"
 #SBATCH --output=slurm_outputs/output_sport-tracking.txt
 #SBATCH --error=slurm_outputs/output_sport-tracking.err
@@ -20,7 +22,7 @@ echo "The job was run on these nodes: $SLURM_JOB_NODELIST"
 
 
 module purge
-module load Python/3.13.5-GCCcore-14.3.0
+module load Anaconda3/2024.02-1
 
 pip install uv --user
 
