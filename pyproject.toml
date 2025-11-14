@@ -7,8 +7,10 @@ requires-python = ">=3.12"
 dependencies = [
     "albumentations>=2.0.8",
     "codecarbon>=3.0.8",
+    "gradio>=5.49.1",
     "ipykernel>=7.1.0",
     "lap>=0.5.12",
+    "loguru>=0.7.3",
     "python-dotenv>=1.2.1",
     "torch>=2.9.0",
     "ultralytics>=8.3.225",
