@@ -19,7 +19,7 @@ model.train(
     data="/cluster/work/sverrnys/sport-tracking/rbk_all.yaml",
     epochs=100,
     imgsz=1280,
-    batch=16,
+    batch=-1,
     workers=8,
     project="runs/train",
     name="rbk_all",
