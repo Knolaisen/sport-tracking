@@ -219,7 +219,6 @@ __marimo__/
 data/*
 
 **runs/
-*.pt
 
 
 slurm_outputs/*
