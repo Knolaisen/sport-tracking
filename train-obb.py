@@ -2,6 +2,10 @@ from ultralytics import YOLO
 from dotenv import load_dotenv
 import os
 import wandb
+from codecarbon import EmissionsTracker
+
+tracker = EmissionsTracker(project_name="sport-tracking-yolo11l-rbk-all")
+tracker.start()
 
 load_dotenv()
 
@@ -24,6 +28,9 @@ model.train(
     project="runs/train",
     name="rbk_all",
 )
+
+emmissions = tracker.stop()
+print(f"Emmissions: {emmissions} kg CO2")
 
 model.val()
 
