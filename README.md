@@ -17,3 +17,17 @@ The tracking module aims to maintain consistent identities for all detected obje
 ## Dataset
 
 The datasets are **meticulously annotated** with 2D bounding boxes for players, referees, and the ball, including consistent tracking IDs and visibility information.
+
+## Prerequisites
+- Ensure that git is installed on your machine. [Download Git](https://git-scm.com/downloads)
+- Docker is used for the backend and database setup. [Download Docker](https://www.docker.com/products/docker-desktop)
+
+
+## Usage
+To use the tracking system, follow these steps:
+
+```bash
+docker compose up --build
+```
+
+This will start a gradio user interface where you can upload/record videos and visualize tracking results. This interface will be accessible at `http://localhost:7860`.
